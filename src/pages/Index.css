@@ -1,0 +1,142 @@
+.un-login-banner{
+	width: 100%;
+    height: 120px;
+    background: #00b38a;
+}
+.un-login-banner .inner{
+	width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+.un-login-banner .inner .img-wrapper{
+	float: left;
+    width: 680px;
+    height: 120px;
+    background: url(../images/3.png) no-repeat center center;
+}
+.un-login-banner .inner .register-login-form{
+	position: relative;
+    float: right;
+    width: 485px;
+    margin-top: 42px;
+}
+.un-login-banner .inner .register-login-form .input-wrapper{
+	float: left;
+    margin-right: 8px;
+
+}
+.un-login-banner .inner .register-login-form .input-wrapper .area-code-content{
+	 position: relative;
+    display: inline-block;
+    float: left;
+    background: #fff;
+}
+.un-login-banner .inner .register-login-form .input-wrapper .area-code-content .area-code-list{
+	position: absolute;
+    left: 0;
+    top: 35px;
+    z-index: 10;
+    display: none;
+    width: 214px;
+    max-height: 288px;
+    border: 1px solid #eee;
+    overflow-y: scroll;
+    background-color: #fff;
+}
+.un-login-banner .inner .register-login-form .input-wrapper .area-code-content .area-code-list .code-list-main{
+	line-height: 36px;
+	font-size: 14px;
+    cursor: default;
+}
+.un-login-banner .inner .register-login-form .input-wrapper .area-code-content .area-code-list .tips{
+	color: #B5B5B5;
+    padding: 40px 12px;
+    font-size: 14px;
+    line-height: 22px;
+}
+.un-login-banner .inner .register-login-form .input-wrapper .area-code-content .area-code-list .code-list-main dt{
+	padding: 0 12px;
+    color: #999;
+    background-color: #FBFBFB;
+}
+.un-login-banner .inner .register-login-form .input-wrapper .area-code-content .area-code-list .code-list-main dd{
+	padding: 0 12px;
+    color: #555;
+}
+.un-login-banner .inner .register-login-form .input-wrapper .area-code-content .area-code-list .code-list-main dd span{
+	float: right;
+}
+.un-login-banner .inner .register-login-form .input-wrapper .area-code-content .area-code-list .code-list-main dd:hover{
+	color:#00b38a;
+	background: rgb(244,244,244);
+}
+.un-login-banner .inner .register-login-form .input-wrapper .area-code-content .area-code-span{
+	display: inline-block;
+    width: 70px;
+    line-height: 35px;
+    height: 35px;
+    cursor: pointer;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #333;
+    background: url(../images/4.png) no-repeat right center;
+    background-size: 9px 5px;
+}
+.un-login-banner .inner .register-login-form .input-wrapper .tel-input{
+	width: 146px;
+	height: 35px;
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 35px;
+    color: #333;
+    background: #fff;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+}
+.un-login-banner .inner .register-login-form .input-wrapper .yzm-input{
+	width: 93px;
+	height: 35px;
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 35px;
+    color: #333;
+    background: #fff;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+}
+.un-login-banner .inner .register-login-form .input-wrapper .yzm-btn{
+	float: right;
+    position: relative;
+    width: 52px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #00b38a;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+}
+.un-login-banner .inner .register-login-form .register-login-btn{
+	float: left;
+    width: 107px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bolder;
+    opacity: .8;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.un-login-banner .inner .register-login-form .register-login-btn:hover{
+	background: rgb(51,194,161);
+}
+.un-login-banner .inner .register-login-form .error-area{
+	line-height: 40px;
+	font-size: 14px;
+	color: white;
+}

@@ -1,0 +1,145 @@
+.header{
+	width: 100%;
+	height: 40px;
+	background: #32373e;
+}
+.header .inner{
+	width:1200px;
+	height: 40px;
+	margin: 0 auto;
+	font-size: 14px;
+}
+.header .inner .lg_tbar_l{
+	width:600px;
+	height: 40px;
+	float: left;
+}
+.header .inner .lg_tbar_l .logo{
+	width: 43px;
+	height: 40px;
+	display: block;
+	float: left;
+	background: url(../images/logo.png);
+}
+.header .inner .lg_tbar_l .lg_tbar_tabs{
+	width: 522px;
+	height: 40px;
+	float: left;
+    margin-left: 34px;
+}
+.header .inner .lg_tbar_l .lg_tbar_tabs li{
+	float: left;
+	
+}
+.header .inner .lg_tbar_l .lg_tbar_tabs li a{
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	display: inline-block;
+	padding: 0 21px;
+    color: #AFB5C0;
+    position: relative;
+}
+.header .inner .lg_tbar_l .lg_tbar_tabs li a:hover{
+	color:#ffffff;
+}
+.header .inner .lg_tbar_l .lg_tbar_tabs .suggestCity{
+	margin-right: 30px;
+}
+.header .inner .lg_tbar_l .lg_tbar_tabs .suggestCity span{
+	font-size: 14px;
+    color: #0dca9f;
+    line-height: 40px;
+    padding-right: 12px;
+    margin: 0;
+}
+.header .inner .lg_tbar_l .lg_tbar_tabs .suggestCity #changeCity_btn{
+	font-size: 12px;
+    color: #afb5c0;
+    line-height: 40px;
+    cursor: pointer;
+}
+.header .inner .lg_tbar_l .lg_tbar_tabs .tab-active{
+	background: #24282c;
+    cursor: default;
+}
+.header .inner .lg_tbar_l .lg_tbar_tabs .tab-active a{
+	color:#ffffff;
+}
+.header .inner .lg_tbar_l .lg_tbar_tabs .tips-new{
+	position: absolute;
+    top: 3px;
+    right: -3px;
+    width: 29px;
+    height: 18px;
+    line-height: 16px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    background: #ff7452;
+    border-radius: 9px;
+}
+.header .inner .lg_tbar_r{
+	float: right;
+}
+.header .inner .lg_tbar_r .passport{
+	float: left;
+    margin-right: 52px;
+}
+.header .inner .lg_tbar_r .passport li{
+	float: left;
+}
+.header .inner .lg_tbar_r .passport li a{
+	display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    color: #AFB5C0;
+    cursor: pointer;
+}
+.header .inner .lg_tbar_r .passport li a:hover{
+	color: white;
+}
+.header .inner .lg_tbar_r .passport #upload-resume{
+	padding: 0 12px;
+}
+.header .inner .lg_tbar_r .passport #quick-entrance{
+	padding: 0 12px;
+    margin-right: 54px;
+}
+.header .inner .lg_tbar_r .passport li .login{
+	width: 55px;
+	text-align: right;
+
+	background: url(../images/1.png) no-repeat 0 center;
+	background-size: 18px 18px;
+}
+.header .inner .lg_tbar_r .passport li span{
+	padding: 0 7px;
+    color: #5e6166;
+    line-height: 40px;
+}
+.header .inner .lg_tbar_r .lg_app{
+	position: relative;
+    float: left;
+    width: 70px;
+    text-align: right;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 20px;
+    color: #00b38a;
+    background: url(../images/2.png) no-repeat 0 center;
+    background-size: 12px 18px;
+}
+.header .inner .lg_tbar_r .lg_app:hover{
+	color: #00C295;
+}
+.header .inner .lg_tbar_r .lg_os{
+	float: left;
+    height: 40px;
+    line-height: 40px;
+    color: #AFB5C0;
+}
+.header .inner .lg_tbar_r .lg_os:hover{
+	color: #FFFFFF;
+}
+ 
