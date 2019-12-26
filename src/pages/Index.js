@@ -1,19 +1,30 @@
 import React, { Component } from 'react';
 import Header from '../components/Header';
 import './Index.css';
-
+import axios from 'axios'
  class Index extends Component{
 	constructor(){
 		super();
 		this.state={
 			code:'0086',
 			n:false,
-			log:false
+			log:false,
+			placeholder:"汽车之家",
+			width:0,
+			list:[],
+			ul:false,
 		};
 		this.handleClick=this.handleClick.bind(this);
 		this.Click=this.Click.bind(this);
+		this.inputOnBlur=this.inputOnBlur.bind(this);
+		this.inputOnFocus=this.inputOnFocus.bind(this);
+		this.handleChange=this.handleChange.bind(this);
+		
 	}
 	render(){
+		var lists=this.state.list.map(function(obj,index){
+					return <JobItem obj={obj} key={index}/>
+				})
 		return (
 			<div>
 		   		<Header />
@@ -83,6 +94,27 @@ import './Index.css';
 				        </div>
 				    </div>
 				</div>
+				<div className="search">
+					<div className="search-wrapper">
+						<div className="search_box">
+							<from className="searchForm">
+								<input onChange={this.handleChange} style={{borderWidth:this.state.width}} type="text" className="searchinput" onBlur={this.inputOnBlur} onFocus={this.inputOnFocus} placeholder={this.state.placeholder} />
+								<input className="button" type="submit" value="搜索" />
+							</from>
+						</div>
+						<dl className="hotSearch">
+							<dt>热门搜索：</dt>
+							<dd><a href="#" className="highlight" >年底高薪招聘专场</a></dd>
+							<dd><a href="#" className="highlight" >iOS</a></dd>
+							<dd><a href="#" className="highlight" >java面试</a></dd>
+							<dd><a href="#" className="highlight" >架构设计</a></dd>
+							<dd><a href="#" className="highlight" >C++</a></dd>
+						</dl>
+						<ul className="corner-all" style={{display:this.state.ul?'block':'none'}}>
+							{lists}
+						</ul>
+					</div>
+				</div>
 		   	</div>
 		  )
 	}
@@ -106,7 +138,66 @@ import './Index.css';
 		})
 		
 	}
+	inputOnFocus(){
+		this.setState({
+			placeholder:"搜索职位、公司或地点",
+			width:1
+		})
+
+	}
+	inputOnBlur(){
+		this.setState({
+			placeholder:"汽车之家",
+			width:0
+		})
+	}
+	handleChange(e){
+		//console.log(e.target.value)
+		let input=e.target.value
+		if(input.length){
+			axios.get('https://suggest.lagou.com/suggestion/mix', {
+		    params: {
+			      input:input,
+			      type:1,
+			      num:10
+			    }
+			  })
+			  .then((response)=>{
+			    //console.log(response);
+			    let list=response.data.COMPANY;
+			    //console.log(list)
+			    this.setState({
+			    	list:list,
+			    	ul:!this.state.ul
+			    })
+			  })	
+		}else{
+			this.setState({
+			    	ul:!this.state.ul
+			    })
+		}
+		  
+	}
   
+}
+
+class JobItem extends React.Component{
+	constructor(){
+		super();
+	}
+	
+	render(){
+		let {cont,hot}=this.props.obj;
+		return (
+			<li className="menu-item">
+				<a className="ui-all">
+					<span className="fl">{cont}</span>
+					<span className="fr">共<i>{hot}个</i>职位</span>
+				</a>
+			</li>
+		)
+	}
+	
 }
 
 export default Index;
