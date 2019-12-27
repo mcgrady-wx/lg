@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
-import Header from '../components/Header';
-import './Index.css';
+
 import axios from 'axios'
+import Header from '../components/Header';
+import Menu from '../components/Menu';
+import './Index.css';
+
+
  class Index extends Component{
 	constructor(){
 		super();
@@ -115,6 +119,13 @@ import axios from 'axios'
 						</ul>
 					</div>
 				</div>
+				<div className="sidebar">
+					<div className="nav">
+						<div className="leftnav"><Menu /></div>
+						<div className="banner"></div>
+					</div>
+				</div>
+				
 		   	</div>
 		  )
 	}
