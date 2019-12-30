@@ -61,3 +61,66 @@
     border-radius: 2px;
     border-top-left-radius: 0;
 }
+.mainNavs .menu_box .menu_sub dl{
+	margin: 0 0 17px;
+}
+.mainNavs .menu_box .menu_sub dl dt{
+	position: relative;
+    width: 70px;
+    margin: 0;
+    padding-left: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 6px;
+}
+.mainNavs .menu_box .menu_sub dl dt span{
+	position: relative;
+    display: inline-block;
+    padding: 0;
+    color: #333;
+}
+.mainNavs .menu_box .menu_sub dl dt .icon_new{
+	position: absolute;
+    right: -12px;
+    top: 12px;
+    width: 24px;
+    height: 14px;
+    background: url(../images/6.png) 0 0 no-repeat;
+}
+.mainNavs .menu_box .menu_sub dl dd{
+	color: #555;
+    font-size: 0;
+    overflow: hidden;
+    float: left;
+    position: relative;
+}
+.mainNavs .menu_box .menu_sub dl dd span{
+	color:#D8D8D8;
+	position: absolute;
+	font-size: 14px;
+	right: 0;
+	top: 7px;
+}
+.mainNavs .menu_box .menu_sub dl dd a{
+	display: inline-block;
+    position: relative;
+    margin-left: -1px;
+    padding: 0 11px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #777;
+    white-space: nowrap;
+}
+.mainNavs .menu_box .menu_sub dl dd .curr{
+	color:#00B38A;
+}
+.mainNavs .menu_box .menu_sub dl dd a:hover{
+	color:#00B38A;
+	text-decoration: underline;
+}
+.mainNavs .menu_box .menu_sub dl dd a h3{
+	font-size: 14px;
+}
+#jishu,#chanpin,#sheji,#yunying,#shichang,#xiaoshou,#zhineng,#youxi{
+	display: none;
+}
