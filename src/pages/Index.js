@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-
+import { Carousel } from 'antd';
+import $ from 'jquery';
 import axios from 'axios'
 import Header from '../components/Header';
 import Menu from '../components/Menu';
 import './Index.css';
-
+import img7 from '../images/7.png';
+import img8 from '../images/8.png';
+import img9 from '../images/9.png';
 
  class Index extends Component{
 	constructor(){
@@ -17,12 +20,17 @@ import './Index.css';
 			width:0,
 			list:[],
 			ul:false,
+			hour:[]
 		};
 		this.handleClick=this.handleClick.bind(this);
 		this.Click=this.Click.bind(this);
 		this.inputOnBlur=this.inputOnBlur.bind(this);
 		this.inputOnFocus=this.inputOnFocus.bind(this);
 		this.handleChange=this.handleChange.bind(this);
+		this.handleMouseOver=this.handleMouseOver.bind(this);
+		this.handleMouseOut=this.handleMouseOut.bind(this);
+		this.handleLeft=this.handleLeft.bind(this);
+		this.handleRight=this.handleRight.bind(this);
 		
 	}
 	render(){
@@ -122,12 +130,36 @@ import './Index.css';
 				<div className="sidebar">
 					<div className="nav">
 						<div className="leftnav"><Menu /></div>
-						<div className="banner"></div>
+						<div className="banner" onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut}>
+							 <Carousel autoplay ref='img'>
+							    <div>
+							    	<a href="#"><img src={img7}/></a>
+							    </div>
+							    <div>
+							     	<a href="#"><img src={img8}/></a>
+							    </div>
+							    <div>
+							      	<a href="#"><img src={img9}/></a>
+							    </div>
+							  </Carousel>
+							  <i className="control-left" onClick={this.handleLeft}></i>
+							  <i className="control-right" onClick={this.handleRight}></i>
+						</div>
 					</div>
 				</div>
-				
 		   	</div>
 		  )
+	}
+	componentWillMount(){
+		fetch('hour.json').then((response)=>{
+			response.json().then((data)=>{
+				this.setState({
+					hour:data.content.data.page.result
+				})
+				
+			})
+		})
+		
 	}
 	handleClick(){
 		let n=this.state.n
@@ -188,6 +220,22 @@ import './Index.css';
 			    })
 		}
 		  
+	}
+	handleMouseOver(){
+		$(".control-left").show();
+		$(".control-right").show();
+		
+	}
+	handleMouseOut(){
+		$(".control-left").hide();
+		$(".control-right").hide();
+
+	}
+	handleLeft(){
+		this.refs.img.prev();
+	}
+	handleRight(){
+		this.refs.img.next();
 	}
   
 }

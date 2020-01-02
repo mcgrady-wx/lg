@@ -257,6 +257,49 @@
 	width: 840px;
 	height: 346px;
 	float: right;
-	margin-top:10px;
-	background: orange;
+	margin-top:20px;
+	position: relative;
+}
+.sidebar .nav .banner .ant-carousel{
+	width: 840px;
+	height: 346px;
+	
+}
+.sidebar .nav .banner .ant-carousel .slick-slide{
+	text-align: center;
+  	width: 840px;
+	height: 346px;  
+	line-height: 346px;
+  	overflow: hidden;
+}
+.sidebar .nav .banner .ant-carousel .slick-slide a{
+	display: block;
+	width: 840px;
+	height: 346px;  
+}
+.sidebar .nav .banner .ant-carousel .slick-slide a img{
+	width: 840px;
+	height: 346px;  
+}
+.sidebar .nav .banner .control-left{
+	display: none;
+	position: absolute;
+	width: 18px;
+	height: 34px;
+	background: url(../images/10.png) no-repeat;
+	background-size: 18px 34px;
+	top: 156px;
+    left: 20px;
+    cursor: pointer;
+}
+.sidebar .nav .banner .control-right{
+	display: none;
+	position: absolute;
+	width: 18px;
+	height: 34px;
+	background: url(../images/11.png) no-repeat;
+	background-size: 18px 34px;
+	top: 156px;
+    right: 20px;
+    cursor: pointer;
 }
