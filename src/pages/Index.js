@@ -4,6 +4,7 @@ import $ from 'jquery';
 import axios from 'axios'
 import Header from '../components/Header';
 import Menu from '../components/Menu';
+import Content from '../components/Content';
 import './Index.css';
 import img7 from '../images/7.png';
 import img8 from '../images/8.png';
@@ -20,7 +21,6 @@ import img9 from '../images/9.png';
 			width:0,
 			list:[],
 			ul:false,
-			hour:[]
 		};
 		this.handleClick=this.handleClick.bind(this);
 		this.Click=this.Click.bind(this);
@@ -147,20 +147,15 @@ import img9 from '../images/9.png';
 						</div>
 					</div>
 				</div>
+				<div className="content">
+					<div className="content-box">
+						<Content />
+					</div>
+				</div>
 		   	</div>
 		  )
 	}
-	componentWillMount(){
-		fetch('hour.json').then((response)=>{
-			response.json().then((data)=>{
-				this.setState({
-					hour:data.content.data.page.result
-				})
-				
-			})
-		})
-		
-	}
+	
 	handleClick(){
 		let n=this.state.n
 		this.setState({

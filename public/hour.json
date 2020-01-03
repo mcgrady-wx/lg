@@ -27,7 +27,10 @@
                         "rongzhi":"不需要融资",
                         "miaoshu":"人工智能,物联网",
                         "zhizhao":false,
-                        "biaoti":["其他"]
+                        "biaoti":["其他"],
+                        "hrname":"小A",
+                        "hrposition":"HR",
+                        "hrtou":"../images/12.png"
                     },
                     {
                         "logger":{
@@ -48,7 +51,10 @@
                         "rongzhi":"天使轮",
                         "miaoshu":"其他",
                         "zhizhao":true,
-                        "biaoti":["房产服务"]
+                        "biaoti":["房产服务"],
+                        "hrname":"小B",
+                        "hrposition":"人事经理",
+                        "hrtou":"../images/13.png"
                     },
                     {
                         "logger":{
@@ -69,7 +75,10 @@
                         "rongzhi":"不需要融资",
                         "miaoshu":"物流丨运输 ",
                         "zhizhao":false,
-                        "biaoti":["运维"]
+                        "biaoti":["运维"],
+                        "hrname":"小C",
+                        "hrposition":"人事专员",
+                        "hrtou":"../images/14.png"
                     },
                     {
                         "logger":{
@@ -90,7 +99,10 @@
                         "rongzhi":"不需要融资",
                         "miaoshu":"企业服务,移动互联网 ",
                         "zhizhao":false,
-                        "biaoti":["移动互联网","数据分析"]
+                        "biaoti":["移动互联网","数据分析"],
+                        "hrname":"小D",
+                        "hrposition":"HR",
+                        "hrtou":"../images/15.png"
                     },
                     {
                         "logger":{
@@ -111,7 +123,10 @@
                         "rongzhi":"不需要融资",
                         "miaoshu":"人工智能,软件开发 ",
                         "zhizhao":false,
-                        "biaoti":["C++"]
+                        "biaoti":["C++"],
+                        "hrname":"小E",
+                        "hrposition":"运营经理",
+                        "hrtou":"../images/16.png"
                     },
                     {
                         "logger":{
@@ -132,7 +147,10 @@
                         "rongzhi":"B轮",
                         "miaoshu":"金融  ",
                         "zhizhao":false,
-                        "biaoti":["数据分析"]
+                        "biaoti":["数据分析"],
+                        "hrname":"小F",
+                        "hrposition":"人事主管",
+                        "hrtou":"../images/17.png"
                     },
                     {
                         "logger":{
@@ -153,7 +171,10 @@
                         "rongzhi":"不需要融资",
                         "miaoshu":"硬件,移动互联网 ",
                         "zhizhao":true,
-                        "biaoti":["商家运营","社区运营"]
+                        "biaoti":["商家运营","社区运营"],
+                        "hrname":"小G",
+                        "hrposition":"HR",
+                        "hrtou":"../images/18.png"
                     },
                     {
                         "logger":{
@@ -174,7 +195,10 @@
                         "rongzhi":"不需要融资",
                         "miaoshu":"通讯电子 ",
                         "zhizhao":false,
-                        "biaoti":["其他"]
+                        "biaoti":["其他"],
+                        "hrname":"小W",
+                        "hrposition":"人事",
+                        "hrtou":"../images/19.png"
                     },
                     {
                         "logger":{
@@ -195,7 +219,10 @@
                         "rongzhi":"天使轮",
                         "miaoshu":"软件开发 ",
                         "zhizhao":false,
-                        "biaoti":["C++"]
+                        "biaoti":["C++"],
+                        "hrname":"小R",
+                        "hrposition":"HR",
+                        "hrtou":"../images/20.png"
                     }
                     
                 ],

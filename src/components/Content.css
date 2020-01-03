@@ -1,0 +1,34 @@
+.content-nav{
+	height: 56px;
+	width: 1200px;
+	border-bottom: 1px solid #E8E8E8;
+}
+.content-nav li{
+	float: left;
+	height: 56px;
+	line-height: 56px;
+	font-size: 16px;
+	cursor: pointer;
+}
+.content-nav li a{
+	display: inline-block;
+	height: 56px;
+	color: #999;
+}
+.content-nav .hour{
+	margin-left: 14px;
+}
+.content-nav .new{
+	margin-left: 132px;
+}
+.link_active{
+	border-bottom: 2px solid #333;
+    color: #333!important;
+}
+.content-list{
+	height: 724px;
+	width: 1200px;
+	box-sizing: border-box;
+	padding-top: 30px;
+	
+}
