@@ -32,6 +32,7 @@ import './Content.css';
 				    	
 			      	</Switch>
 				</div>
+				<a href="#" class="list_more">查看更多</a>
 			</Router>
 		  )
 	}

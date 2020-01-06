@@ -19,16 +19,32 @@
 	margin-left: 14px;
 }
 .content-nav .new{
-	margin-left: 132px;
+	margin-left: 80px;
 }
 .link_active{
 	border-bottom: 2px solid #333;
     color: #333!important;
 }
 .content-list{
-	height: 724px;
+	height: 664px;
 	width: 1200px;
 	box-sizing: border-box;
 	padding-top: 30px;
 	
+}
+.list_more{
+	display: block;
+    width: 387px;
+    height: 42px;
+    line-height: 42px;
+    margin: 16px auto 0;
+    background: #FFF;
+    border: 1px solid #00B38A;
+    font-size: 16px;
+    color: #00b38a;
+    text-align: center;
+}
+.list_more:hover{
+	background: #00b38a;
+	color: white;
 }
