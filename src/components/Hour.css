@@ -19,7 +19,6 @@
 	margin-bottom: 18px;
 	width: 351px;
 	height: 87px;
-	border: 1px solid;
 }
 .position_list_ul .position_list_item .item_box .pli_top .pli_top_1{
 	height: 22px;
@@ -43,13 +42,147 @@
 	margin-left: 6px;
 	position: relative;
 }
+.position_list_ul .position_list_item .item_box .pli_top .pli_top_1 .pli_top_tubiao .chat_pop_up{
+    position: absolute;
+    top: -30px;
+    left: 16px;
+    width: 344px;
+    height: 164px;
+    padding: 16px;
+    background: #fff;
+    z-index: 1001;
+    border-radius: 3px;
+    border: 1px solid #dce4e6;
+    box-shadow: 1px 1px 2px #f2f2f2;
+}
+.position_list_ul .position_list_item .item_box .pli_top .pli_top_1 .pli_top_tubiao .chat_pop_up .chat_pop_up_left{
+	width: 184px;
+	float: left;
+}
+.position_list_ul .position_list_item .item_box .pli_top .pli_top_1 .pli_top_tubiao .chat_pop_up .chat_pop_up_left .chat_head{
+	height: 62px;
+}
+.position_list_ul .position_list_item .item_box .pli_top .pli_top_1 .pli_top_tubiao .chat_pop_up .chat_pop_up_left .chat_head dt{
+	width: 62px;
+    height: 62px;
+    float: left;
+    border: 0;
+    padding: 0;
+}
+.position_list_ul .position_list_item .item_box .pli_top .pli_top_1 .pli_top_tubiao .chat_pop_up .chat_pop_up_left .chat_head dt img{
+	width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    overflow: hidden;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 62px;
+    text-align: center;
+}
+.position_list_ul .position_list_item .item_box .pli_top .pli_top_1 .pli_top_tubiao .chat_pop_up .chat_pop_up_left .chat_head dd{
+	float: left;
+	margin-left: 16px;
+}
+.position_list_ul .position_list_item .item_box .pli_top .pli_top_1 .pli_top_tubiao .chat_pop_up .chat_pop_up_left .chat_head dd h4{
+	margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.position_list_ul .position_list_item .item_box .pli_top .pli_top_1 .pli_top_tubiao .chat_pop_up .chat_pop_up_left .chat_head dd h5{
+	font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.position_list_ul .position_list_item .item_box .pli_top .pli_top_1 .pli_top_tubiao .chat_pop_up .chat_pop_up_left .tips_text{
+	font-size: 14px;
+}
+.position_list_ul .position_list_item .item_box .pli_top .pli_top_1 .pli_top_tubiao .chat_pop_up .chat_pop_up_right{
+	float: right;
+	width: 116px;
+	height: 116px;
+	background: url(../images/23.png);
+}
 .position_list_ul .position_list_item .item_box .pli_top .pli_top_1 .pli_top_money{
 	float: right;
 	font-size: 16px;
     color: #fa6041;
 }
+.position_list_ul .position_list_item .item_box .pli_top .pli_top_2{
+	height: 30px;
+    line-height: 30px;
+    color: #777;
+}
+.position_list_ul .position_list_item .item_box .pli_top .pli_top_3{
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+	margin-top: 5px;
+}
+.position_list_ul .position_list_item .item_box .pli_top .pli_top_3 .wordCut{
+	display: inline-block;
+	float: left;
+    width: 61px;
+    height: 26px;
+    padding: 0 5px;
+    font-size: 12px;
+    line-height: 26px;
+    color: #999;
+    border: 1px solid #F0F0F0;
+    border-radius: 3px;
+    text-align: center;
+    margin-right: 10px;
+}
 .position_list_ul .position_list_item .item_box .pli_btm{
 	border-top: 1px dashed #EAEEED;
 	padding-top: 18px;
 	box-sizing: border-box;
+}
+.position_list_ul .position_list_item .item_box .pli_btm .pli_btm_1{
+	display: inline-block;
+	float: left;
+	width: 40px;
+	height: 40px;
+}
+.position_list_ul .position_list_item .item_box .pli_btm .pli_btm_1 img{
+	width: 40px;
+	height: 40px;
+}
+.position_list_ul .position_list_item .item_box .pli_btm .pli_btm_2{
+	margin-left: 14px;
+	float: left;
+}
+.position_list_ul .position_list_item .item_box .pli_btm .pli_btm_2 .company_name{
+	margin: 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.position_list_ul .position_list_item .item_box .pli_btm .pli_btm_2 .company_name a{
+	max-width: 212px;
+	color: #333;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 20px;
+    word-wrap: normal;
+}
+.position_list_ul .position_list_item .item_box .pli_btm .pli_btm_2 .company_name a:hover{
+	color: #00b38a;
+}
+.position_list_ul .position_list_item .item_box .pli_btm .pli_btm_2 .industry{
+	height: 20px;
+    line-height: 20px;
+    color: #999;
+    margin: 0;
+    font-size: 14px;
 }
