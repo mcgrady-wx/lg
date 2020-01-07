@@ -7,7 +7,8 @@ class Listitem extends Component{
 				super();
 				this.state={
 					show:false,
-					big:false
+					big:false,
+					pointer:false
 				};
 				this.handleMouseOver=this.handleMouseOver.bind(this);
 				this.handleMouseOut=this.handleMouseOut.bind(this);
@@ -26,7 +27,7 @@ class Listitem extends Component{
 			    				<div className="pli_top_1">
 			    					<a ref="#" className="pli_top_name">{positionName}</a>
 			    					<span className="pli_top_time">{createTime}</span>
-			    					<div className="pli_top_tubiao" onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut}>
+			    					<div className="pli_top_tubiao" style={{cursor:this.state.pointer?"pointer":"none"}} onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut}>
 			    						<div className="chat_pop_up" style={{display:this.state.show?"block":"none"}}>
 			    							<div className="chat_pop_up_left">
 			    								<dl className="chat_head">
@@ -71,12 +72,14 @@ class Listitem extends Component{
 			handleMouseOver(){
 			
 				this.setState({
-					show:!this.state.show
+					show:!this.state.show,
+					pointer:!this.state.pointer
 				})
 			}
 		  	handleMouseOut(){
 				this.setState({
-					show:!this.state.show
+					show:!this.state.show,
+					pointer:!this.state.pointer
 				})
 		  	}
 		  	handleMouseOver1(){
