@@ -20,6 +20,7 @@ import './Content.css';
 		
 		return (
 		    <Router>
+		    <div className="hour_new">
 				<ul className="content-nav">
 					<li className="hour"><NavLink to="/hour" activeClassName="link_active">24Hour热门</NavLink></li>
 					<li className="new"><NavLink to="/new" activeClassName="link_active">最新职位</NavLink></li>
@@ -33,6 +34,7 @@ import './Content.css';
 			      	</Switch>
 				</div>
 				<a href="#" class="list_more">查看更多</a>
+				</div>
 			</Router>
 		  )
 	}

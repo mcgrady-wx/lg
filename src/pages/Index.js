@@ -5,6 +5,7 @@ import axios from 'axios'
 import Header from '../components/Header';
 import Menu from '../components/Menu';
 import Content from '../components/Content';
+import Internet from '../components/Internet';
 import './Index.css';
 import img7 from '../images/7.png';
 import img8 from '../images/8.png';
@@ -150,6 +151,7 @@ import img9 from '../images/9.png';
 				<div className="content">
 					<div className="content-box">
 						<Content />
+						<Internet />
 					</div>
 				</div>
 		   	</div>
