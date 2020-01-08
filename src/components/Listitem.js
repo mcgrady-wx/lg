@@ -21,7 +21,7 @@ class Listitem extends Component{
 					return <span className="wordCut">{obj}</span>
 				});
 				return (
-					<li className="position_list_item" style={{boxShadow:this.state.big?"0 0 4px 2px rgba(0,0,0,.09)":"none"}}onMouseOver={this.handleMouseOver1} onMouseOut={this.handleMouseOut1}>
+					<li className="position_list_item" style={{boxShadow:this.state.big?"0 0 4px 2px rgba(0,0,0,.09)":"none"}} onMouseOver={this.handleMouseOver1} onMouseOut={this.handleMouseOut1}>
 			    		<div className="item_box">
 			    			<div className="pli_top">
 			    				<div className="pli_top_1">

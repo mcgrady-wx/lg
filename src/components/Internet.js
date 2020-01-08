@@ -5,10 +5,14 @@ import './Internet.css';
  class Internet extends Component{
 	constructor(){
 		super();
-		
+		this.state={
+			internet:[]
+		}
 	}
 	render(){
-		
+		let lists=this.state.internet.map(function(item){
+			return <Item item={item} key={item.positionId} />
+		})
 		return (
 		    
 		    <div className="internet">
@@ -17,52 +21,7 @@ import './Internet.css';
 				</div>
 				<div className="internet-list">
 					<ul className="internet-list-ul">
-						<li className="internet-list-item">
-							<div class="top">
-			                    <p>
-			                        <a href="#" >
-			                            <img src="//www.lgstatic.com/thumbnail_160x160/i/image3/M00/1E/37/Cgq2xlqPqvqAaO0vAAAMxE8jvM4347.png" width="80" height="80" />                            
-			                        </a>
-			                    </p>
-			                    <h3 class="company-name ">
-			                        <a href="#" target="_blank" >瓦拉数字</a>
-			                    </h3>
-			                    <h4 class="indus-stage ">
-			                        <span>移动互联网,金融/B轮</span>                               
-			                    </h4>
-			                    <h4 class="advantage">区块链技术平台初创公司，拥有业界良好资源，投身区</h4>
-			                </div>
-			                <div class="bottom">
-			                    <a class="bottom-item1" href="#">
-			                      	<p class="green">
-			                            <span>68</span>
-			                        </p>
-			                       <p class="gray">面试评价</p>
-			                       <span className="xian">|</span>
-			                    </a>
-			                    <a class="bottom-item2" href="#">
-			                        <p class="green">
-			                            <span>27</span>
-			                        </p>
-			                        <p class="gray">在招职位</p>
-			                        <span className="xian">|</span>
-			                    </a>
-			                    <a class="bottom-item3" href="#" >
-			                        <p class="green">
-			                            <span>100%</span>
-			                        </p>
-			                        <p class="gray">简历处理率</p>
-			                    </a>
-			                </div>
-						</li>
-						<li className="internet-list-item"></li>
-						<li className="internet-list-item"></li>
-						<li className="internet-list-item"></li>
-						<li className="internet-list-item"></li>
-						<li className="internet-list-item"></li>
-						<li className="internet-list-item"></li>
-						<li className="internet-list-item"></li>
-						
+						{lists}
 					</ul>
 					<a href="#" class="list_more">查看更多</a>
 				</div>
@@ -70,7 +29,80 @@ import './Internet.css';
 			
 		  )
 	}
-  
+	componentWillMount(){
+		fetch('internet.json').then((response)=>{
+			response.json().then((data)=>{
+				this.setState({
+					internet:data.content.data.page.result
+				})
+				
+			})
+		})
+  	}
+}
+
+class Item extends Component{
+	constructor(){
+		super();
+		this.state={
+			big:false
+		};
+		this.handleMouseOver=this.handleMouseOver.bind(this);
+		this.handleMouseOut=this.handleMouseOut.bind(this);
+	}
+	render(){
+		let {companyLogo,companyName,miaoshu,rongzhi,biaoti,mianshi,zhiwei,chuli}=this.props.item;
+		return (
+		    <li className="internet-list-item" style={{boxShadow:this.state.big?"0 0 4px 2px rgba(0,0,0,.09)":"none"}} onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut}>
+				<div class="top">
+                    <p>
+                        <a href="#" >
+                            <img src={companyLogo} width="80" height="80" />                            
+                        </a>
+                    </p>
+                    <h3 class="company-name ">
+                        <a href="#">{companyName}</a>
+                    </h3>
+                    <h4 class="indus-stage ">
+                        <span>{miaoshu}/{rongzhi}</span>                               
+                    </h4>
+                    <h4 class="advantage">{biaoti}</h4>
+                </div>
+                <div class="bottom">
+                    <a class="bottom-item1 fl" href="#">
+                      	<p class="green">
+                            <span>{mianshi}</span>
+                        </p>
+                       <p class="gray">面试评价</p>
+                       <span className="xian">|</span>
+                    </a>
+                    <a class="bottom-item2 fl" href="#">
+                        <p class="green">
+                            <span>{zhiwei}</span>
+                        </p>
+                        <p class="gray">在招职位</p>
+                        <span className="xian">|</span>
+                    </a>
+                    <a class="bottom-item3 fl" href="#" >
+                        <p class="green">
+                            <span>{chuli}</span>
+                        </p>
+                        <p class="gray">简历处理率</p>
+                    </a>
+                </div>
+			</li>
+		  )
+	}
+	handleMouseOver(){
+  		this.setState({
+			big:!this.state.big
+		})
+  	}
+  	handleMouseOut(){
+  		this.setState({
+			big:!this.state.big
+		})
+  	}
 }
 
 export default Internet;

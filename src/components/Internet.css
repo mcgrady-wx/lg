@@ -153,6 +153,9 @@
     font-size: 12px;
     color: #999;
 }
+.internet .internet-list .internet-list-ul .internet-list-item .bottom .fl:hover .gray{
+	color:#00b38a;
+}
 .internet .internet-list .list_more{
 	display: block;
     width: 387px;
