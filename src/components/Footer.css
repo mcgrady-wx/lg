@@ -1,0 +1,17 @@
+.footer{
+	width: 100%;
+	height: 386px;
+	background-color: #fff;
+    clear: both;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    z-index: 1001;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.footer .footerbox{
+	width: 1200px;
+	height: 170px;
+	margin: 0 auto;
+	background: red;
+}

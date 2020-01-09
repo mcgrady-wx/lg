@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import Menu from '../components/Menu';
 import Content from '../components/Content';
 import Internet from '../components/Internet';
+import Footer from '../components/Footer';
 import './Index.css';
 import img7 from '../images/7.png';
 import img8 from '../images/8.png';
@@ -22,6 +23,7 @@ import img9 from '../images/9.png';
 			width:0,
 			list:[],
 			ul:false,
+			height:false,
 		};
 		this.handleClick=this.handleClick.bind(this);
 		this.Click=this.Click.bind(this);
@@ -32,6 +34,7 @@ import img9 from '../images/9.png';
 		this.handleMouseOut=this.handleMouseOut.bind(this);
 		this.handleLeft=this.handleLeft.bind(this);
 		this.handleRight=this.handleRight.bind(this);
+		this.handleClick=this.handleClick.bind(this);
 		
 	}
 	render(){
@@ -154,6 +157,66 @@ import img9 from '../images/9.png';
 						<Internet />
 					</div>
 				</div>
+				<div className="link">
+					<div className="linkbox">
+						<dl>
+        					<dt><span className="current">友情链接</span></dt>
+        					<dd class="links" style={{height:this.state.height?"124px":"31px"}}>
+                                <a href="http://www.lagou.com/" target="_blank" className="friend-link">拉勾网</a>
+                                <a href="http://www.lagou.com/" target="_blank" className="friend-link">找工作</a>
+                                <a href="http://www.lagou.com/" target="_blank" className="friend-link">招聘网</a>
+                                <a href="http://www.lagou.com" target="_blank" className="friend-link">招聘</a>
+                                <a href="http://kaiwu.lagou.com/course/courseInfo.htm?courseId=1" target="_blank" className="friend-link">java课</a>
+                                <a href="http://kaiwu.lagou.com/course/courseInfo.htm?courseId=2" target="_blank" className="friend-link">架构课</a>
+                                <a href="http://www.offcn.com" target="_blank" className="friend-link">国家公务员考试网</a>
+                                <a href="http://www.eqxiu.com/" target="_blank" className="friend-link">易企秀H5</a>
+                                <a href="http://www.lagou.com/s/list_5330ed5dd3d161b369c6c8a4d1a9d17555d6519424b22bf350ae863857ac5565" target="_blank" className="friend-link">移动WEB开发工程师</a>
+                                <a href="http://www.wangxiao.cn" target="_blank" className="friend-link">中大网校</a>
+                                <a href="http://www.woshipm.com/" target="_blank" className="friend-link">人人都是产品经理</a>
+                                <a href="http://www.chinairn.com/" target="_blank" className="friend-link">研究报告</a>
+                                <a href="http://www.examw.com/" target="_blank" className="friend-link">中华考试网</a>
+                                <a href="http://www.zgjsks.com" target="_blank" className="friend-link">教师网</a>
+                                <a href="http://www.lagou.com/hangzhou/" target="_blank" className="friend-link">杭州招聘</a>
+                                <a href="http://www.lagou.com/shanghai/" target="_blank" className="friend-link">上海招聘</a>
+                                <a href="http://china.findlaw.cn/" target="_blank" className="friend-link">法律咨询</a>
+                                <a href="http://www.jobui.com" target="_blank" className="friend-link">求职网站</a>
+                                <a href="http://www.yuwenmi.com/" target="_blank" className="friend-link">语文学习网</a>
+                                <a href="http://www.job592.com/" target="_blank" className="friend-link">职业圈</a>
+                                <a href="http://finance.gucheng.com/" target="_blank" className="friend-link">股城财经</a>
+                                <a href="http://www.zbj.com/" target="_blank" className="friend-link">创意服务外包</a>
+                                <a href="http://www.lawtime.cn/" target="_blank" className="friend-link">法律咨询</a>
+                                <a href="http://www.99114.com/" target="_blank" className="friend-link">电子商务平台</a>
+                                <a href="http://www.64365.com" target="_blank" className="friend-link">法律咨询网</a>
+                                <a href="http://www.jianzhi8.com/" target="_blank" className="friend-link">兼职吧</a>
+                                <a href="http://ishare.iask.sina.com.cn/" target="_blank" className="friend-link">爱问共享资料</a>
+                                <a href="http://www.liepin.com/" target="_blank" className="friend-link">招聘</a>
+                                <a href="http://baike.1688.com/" target="_blank" className="friend-link">生意经商业百科</a>
+                                <a href="http://tuku.jia.com" target="_blank" className="friend-link">装修效果图</a>
+                                <a href="http://www.ickd.cn" target="_blank" className="friend-link">快递查询</a>
+                                <a href="http://www.eoffcn.com" target="_blank" className="friend-link">中公公务员网校</a>
+                                <a href="http://www.job5156.com/" target="_blank" className="friend-link">招聘网</a>
+                                <a href="http://www.qianzhan.com" target="_blank" className="friend-link">前瞻网</a>
+                                <a href="http://shanghai.baixing.com/ " target="_blank" className="friend-link">上海分类信息网</a>
+                                <a href="http://www.goodjobs.cn" target="_blank" className="friend-link">安徽招聘网</a>
+                                <a href="http://www.huibo.com" target="_blank" className="friend-link">重庆人才网</a>
+                                <a href="http://www.canet.com.cn/" target="_blank" className="friend-link">中国会计网</a>
+                                <a href="http://www.qlrc.com/" target="_blank" className="friend-link">齐鲁人才网</a>
+                                <a href="http://www.youbian.com/" target="_blank" className="friend-link">邮编生活网</a>
+                                <a href="http://www.lagou.com/gongsi/j62.html" target="_blank" className="friend-link">字节跳动招聘</a>
+                                <a href="http://www.lagou.com/gongsi/254799.html" target="_blank" className="friend-link">小鹏汽车招聘</a>
+                                <a href="http://www.lagou.com/gongsi/59178.html" target="_blank" className="friend-link">泛华金融</a>
+                                <a href="http://www.lagou.com/gongsi/263106.html" target="_blank" className="friend-link">简学网</a>
+                                <a href="http://www.lagou.com/gongsi/93527.html" target="_blank" className="friend-link">易企秀</a>
+                                <a href="http://www.lagou.com/gongsi/10359.html" target="_blank" className="friend-link">酷家乐</a>
+                                <a href="http://www.lagou.com/gongsi/j7461.html" target="_blank" className="friend-link">有赞</a>
+                                <a href="http://www.lagou.com/gongsi/6356.html" target="_blank" className="friend-link">兼职猫</a>
+                                <a href="https://www.lagou.com/af/flink.html" target="_blank" className="more" rel="nofollow">更多</a>                                
+        					</dd>
+        					<span rel="nofollow" href="javascript:;" className="expansion" onClick={this.handleClick}>{this.state.height?"收起":"展开"}<i></i></span>
+    					</dl>
+					</div>
+				</div>
+				<Footer />
 		   	</div>
 		  )
 	}
@@ -233,6 +296,12 @@ import img9 from '../images/9.png';
 	}
 	handleRight(){
 		this.refs.img.next();
+	}
+	handleClick(){
+		
+		this.setState({
+					height:!this.state.height
+				})
 	}
   
 }
