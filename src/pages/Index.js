@@ -24,6 +24,7 @@ import img9 from '../images/9.png';
 			list:[],
 			ul:false,
 			height:false,
+			backtop:false
 		};
 		this.handleClick=this.handleClick.bind(this);
 		this.Click=this.Click.bind(this);
@@ -35,6 +36,8 @@ import img9 from '../images/9.png';
 		this.handleLeft=this.handleLeft.bind(this);
 		this.handleRight=this.handleRight.bind(this);
 		this.handleClick=this.handleClick.bind(this);
+		this.handleScroll=this.handleScroll.bind(this);
+		this.goto=this.goto.bind(this);
 		
 	}
 	render(){
@@ -217,10 +220,13 @@ import img9 from '../images/9.png';
 					</div>
 				</div>
 				<Footer />
+				<a id="backtop" title="回到顶部" rel="nofollow" style={{display:this.state.backtop?"block":"none"}} onClick={this.goto}></a>
 		   	</div>
 		  )
 	}
-	
+	componentWillMount(){
+        window.addEventListener('scroll', this.handleScroll)
+    }
 	handleClick(){
 		let n=this.state.n
 		this.setState({
@@ -302,6 +308,20 @@ import img9 from '../images/9.png';
 		this.setState({
 					height:!this.state.height
 				})
+	}
+	handleScroll(){
+		if(window.scrollY){
+			this.setState({
+				backtop:true
+			})
+		}else{
+			this.setState({
+				backtop:false
+			})
+		}
+	}
+	goto(){
+		$("html,body").animate({scrollTop:0},1000);
 	}
   
 }

@@ -378,3 +378,17 @@
     background-position: 0 3px;
     background-size: 12px 6px;
 }
+#backtop{
+	background: url(//www.lgstatic.com/lg-www-fed/common/widgets/footer_c/modules/img/backtop-new_0e4bcbc.png) left top no-repeat;
+    width: 28px;
+    height: 46px;
+    position: fixed;
+    left: 55%;
+    bottom: 88px;
+    margin-left: 548px;
+    cursor: pointer;
+    z-index: 1002;
+}
+#backtop:hover {
+    background-position: right top!important;
+}
