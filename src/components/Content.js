@@ -1,42 +1,45 @@
 import React, { Component } from 'react';
 import New from './New';
 import Hour from './Hour';
-import {
-  HashRouter as Router, //你要用路径模式,路由的最外层
-  Route, //路由切换的坑,组件的载体
-  Link, //模板切换的组件
-  NavLink,
-  Redirect,
-  Switch
-} from 'react-router-dom';
 import './Content.css';
 
  class Content extends Component{
 	constructor(){
 		super();
+		this.state={
+			who:true,
+			currentState:true
+		}
 		
 	}
 	render(){
 		
 		return (
-		    <Router>
+		
 		    <div className="hour_new">
-				<ul className="content-nav">
-					<li className="hour"><NavLink to="/hour" activeClassName="link_active">24Hour热门</NavLink></li>
-					<li className="new"><NavLink to="/new" activeClassName="link_active">最新职位</NavLink></li>
-				</ul>
-				<div className="content-list">
-					<Switch>
-				      	<Route path="/hour" component={Hour}></Route>
-				      	<Route path="/new" component={New}></Route>
-				    	<Redirect path="/" to="/hour"></Redirect>
-				    	
-			      	</Switch>
+					<ul className="content-nav">					
+						<li className="hour"><span className={`active ${this.state.currentState?"link_active":""}`} onClick={this.hour.bind(this)}>24Hour热门</span></li>
+						<li className="new"><span className={`active ${this.state.currentState?"":"link_active"}`} onClick={this.new.bind(this)}>最新职位</span></li>
+					</ul>
+					<div className="content-list">
+						{this.state.who?<Hour />:<New />}
+					</div>
+					<a href="#" class="list_more">查看更多</a>
 				</div>
-				<a href="#" class="list_more">查看更多</a>
-				</div>
-			</Router>
+		
 		  )
+	}
+	hour(){
+		this.setState({
+			currentState:true,
+			who:true
+		})
+	}
+	new(){
+		this.setState({
+			currentState:false,
+			who:false
+		})
 	}
   
 }

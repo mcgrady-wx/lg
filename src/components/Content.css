@@ -15,16 +15,17 @@
 	font-size: 16px;
 	cursor: pointer;
 }
-.hour_new .content-nav li a{
-	display: inline-block;
-	height: 56px;
-	color: #999;
-}
+
 .hour_new .content-nav .hour{
 	margin-left: 14px;
 }
 .hour_new .content-nav .new{
 	margin-left: 80px;
+}
+.hour_new .content-nav .active{
+	display: inline-block;
+    height: 56px;
+    color: #999;
 }
 .hour_new .link_active{
 	border-bottom: 2px solid #333;
