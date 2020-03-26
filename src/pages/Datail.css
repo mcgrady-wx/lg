@@ -1,0 +1,12 @@
+.contents{
+	height: 400px;
+	width: 100%;
+	line-height: 400px;
+	text-align: center;
+	font-size: 30px;
+	
+}
+.contents .id{
+	font-size: 50px;
+	color: red;
+}
