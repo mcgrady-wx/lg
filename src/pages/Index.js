@@ -35,7 +35,7 @@ import img9 from '../images/9.png';
 		this.handleMouseOut=this.handleMouseOut.bind(this);
 		this.handleLeft=this.handleLeft.bind(this);
 		this.handleRight=this.handleRight.bind(this);
-		this.handleClick=this.handleClick.bind(this);
+		this.handleClick1=this.handleClick1.bind(this);
 		this.handleScroll=this.handleScroll.bind(this);
 		this.goto=this.goto.bind(this);
 		
@@ -215,7 +215,7 @@ import img9 from '../images/9.png';
                                 <a href="http://www.lagou.com/gongsi/6356.html" target="_blank" className="friend-link">兼职猫</a>
                                 <a href="https://www.lagou.com/af/flink.html" target="_blank" className="more" rel="nofollow">更多</a>                                
         					</dd>
-        					<span rel="nofollow" href="javascript:;" className="expansion" onClick={this.handleClick}>{this.state.height?"收起":"展开"}<i></i></span>
+        					<span rel="nofollow" href="javascript:;" className="expansion" onClick={this.handleClick1}>{this.state.height?"收起":"展开"}<i></i></span>
     					</dl>
 					</div>
 				</div>
@@ -303,7 +303,7 @@ import img9 from '../images/9.png';
 	handleRight(){
 		this.refs.img.next();
 	}
-	handleClick(){
+	handleClick1(){
 		
 		this.setState({
 					height:!this.state.height
