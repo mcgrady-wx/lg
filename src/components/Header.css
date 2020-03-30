@@ -142,4 +142,734 @@
 .header .inner .lg_tbar_r .lg_os:hover{
 	color: #FFFFFF;
 }
- 
+.modal-content{
+	z-index: 99;
+	width: 436px;
+	height: 498px;
+	background: white;
+	border-radius: 6px;
+	position: relative;
+	margin:auto;
+	top: 222px;
+	background-clip: padding-box;
+    outline: 0;
+}
+.modal-content .modal-body{
+	width: 436px;
+	height: 498px;
+	position: relative;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.modal-content .modal-body .modal-close_icon{
+	position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    font-style: normal;
+}
+.modal-content .modal-body .account{
+	width: 406px;
+	height: 468px;
+	box-sizing: border-box;
+	padding: 10px;
+	
+}
+.modal-content .modal-body .account .change-btn{
+	display: block;
+	background-image: url(//www.lgstatic.com/lg-www-fed/common/widgets/passport/static/images/popup-sprite_e5ea04f.png);
+    background-repeat: no-repeat;
+    background-position: -440px -268px;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.modal-content .modal-body .account .change-btn:hover{
+	background-position: -334px -330px;
+}
+.modal-content .modal-body .account .change-btn:after{
+	content: "";
+    position: absolute;
+    top: -2px;
+    right: -112px;
+    width: 107px;
+    height: 36px;
+    background-image: url(//www.lgstatic.com/lg-www-fed/common/widgets/passport/static/images/pop-sprite_de4e5ce.png);
+    background-repeat: no-repeat;
+    background-position: -381px -260px;
+}
+.modal-content .modal-body .account .logo{
+	width: 86px;
+    height: 42px;
+    margin: 35px auto 40px;
+    background-image: url(//www.lgstatic.com/lg-www-fed/common/widgets/passport/static/images/popup-sprite_e5ea04f.png);
+    background-repeat: no-repeat;
+    background-position: -334px -268px;
+}
+.modal-content .modal-body .account .forms-area{
+	width: 316px;
+	height: 331px;
+	margin: 0 auto;
+}
+.modal-content .modal-body .account .forms-area .forms-top-wrapper{
+	width: 316px;
+	height: 140px;
+	overflow: hidden;
+}
+.modal-content .modal-body .account .forms-area .forms-top-wrapper .forms-top-password{
+	width: 316px;
+	height: 140px;
+}
+.modal-content .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .active .login_enter_password{
+	box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    padding-left: 18px;
+    background: 0 0;
+    border-radius: 0;
+    font-size: 14px;
+    border: 0;
+    background: #f4f4f4;
+    margin-bottom: 16px;
+    outline: none;
+}
+.modal-content .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .phone-input{
+	position: relative;
+    width: 316px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+}
+.modal-content .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .phone-input .input_border{
+	border: 1px solid #fff;
+}
+.modal-content .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .phone-input .input_border .area_code{
+	position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    line-height: 50px;
+    cursor: default;
+    margin-left: 18px;
+}
+.modal-content .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .phone-input .input_border .area_code:after{
+	position: absolute;
+    right: 0px;
+    top: 24px;
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0;
+    border-color: #9c9c9c transparent transparent;
+}
+.modal-content .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .phone-input .input_border .area_code_list{
+	position: absolute;
+    left: 0;
+    top: 46px;
+    z-index: 99;
+    width: 200px;
+    max-height: 90px;
+    border: 1px solid #eee;
+    overflow-y: scroll;
+    background-color: #fff;
+}
+.modal-content .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .phone-input .input_border .area_code_list .code-list-main{
+	line-height: 36px;
+    cursor: default;
+}
+.modal-content .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .phone-input .input_border .area_code_list .code-list-main dt{
+	padding: 0 12px;
+    color: #999;
+    background-color: #FBFBFB;
+}
+.modal-content .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .phone-input .input_border .area_code_list .code-list-main dd{
+	padding: 0 12px;
+    color: #555;
+}
+.modal-content .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .phone-input .input_border .area_code_list .code-list-main dd span{
+	float: right;
+}
+.modal-content .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .phone-input .input_border .area_code_list .tips{
+	color: #B5B5B5;
+    padding: 40px 12px;
+}
+.modal-content .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .phone-input .input_border .login_enter_code{
+	box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    border-radius: 0;
+    font-size: 14px;
+    border: 0;
+    background: #f4f4f4;
+    padding-left: 100px;
+    outline: none;
+}
+.modal-content .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .input_group{
+	background: #f4f4f4;
+}
+.modal-content .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .input_group .yzm-input{
+	width: 216px;
+    float: left;
+    box-sizing: border-box;
+    height: 50px;
+    padding-left: 18px;
+    border-radius: 0;
+    font-size: 14px;
+    border: 0;
+    background: #f4f4f4;
+    outline: none;
+}
+.modal-content .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .input_group .yzm-btn{
+	width: 95px;
+    float: left;
+    padding: 0;
+    font-size: 14px;
+    color: #00b38a;
+    text-align: center;
+    line-height: 48px;
+    background: #f4f4f4;
+    border: 0;
+}
+.modal-content .modal-body .account .forms-area .forms-bottom{
+	width: 316px;
+	height: 95px;
+	margin: 0 auto;
+}
+.modal-content .modal-body .account .forms-area .forms-bottom .clearfix .change-login-type{
+	width: 150px;
+    float: left;
+    cursor: pointer;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #00b38a;
+}
+.modal-content .modal-body .account .forms-area .forms-bottom .clearfix a{
+	float: right;
+    font-size: 14px;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #999;
+}
+.modal-content .modal-body .account .forms-area .forms-bottom .login-btn{
+	width: 316px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background-image: url(//www.lgstatic.com/lg-www-fed/common/widgets/passport/static/images/popup-sprite_e5ea04f.png);
+    background-repeat: no-repeat;
+    background-position: -20px -20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.modal-content .modal-body .account .forms-area .register-btn{
+	width: 100%;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 23px;
+}
+.modal-content .modal-body .account .forms-area .third-login{
+	margin-top: 30px;
+    font-size: 14px;
+    color: #999;
+}
+.modal-content .modal-body .account .forms-area .third-login .third-login-btns{
+	display: inline-block;
+    vertical-align: middle;
+}
+.modal-content .modal-body .account .forms-area .third-login .third-login-btns a{
+	cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 13px;
+    background-image: url(//www.lgstatic.com/lg-www-fed/common/widgets/passport/static/images/third-sprite_d07ffce.png);
+    background-repeat: no-repeat;
+}
+.modal-content .modal-body .account .forms-area .third-login .third-login-btns .weibo{
+	width: 27px;
+    height: 27px;
+    background-position: -196px -82px;
+}
+.modal-content .modal-body .account .forms-area .third-login .third-login-btns .wechat{
+	width: 27px;
+    height: 27px;
+    background-position: -102px -206px;
+}
+.modal-content .modal-body .account .forms-area .third-login .third-login-btns .qq{
+	width: 27px;
+    height: 27px;
+    background-position: -196px -123px;
+}
+.modal-content .modal-body .account .forms-area .third-login .third-login-btns .baidu{
+	width: 27px;
+    height: 27px;
+    background-position: -20px -210px;
+}
+.zhang{
+	display: none;
+}
+.modal-content .modal-body .passport-pop-wrapper{
+	position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,.95);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.modal-content .modal-body .passport-pop-wrapper .change-btn{
+	display: block;
+	background-image: url(//www.lgstatic.com/lg-www-fed/common/widgets/passport/static/images/popup-sprite_e5ea04f.png);
+    background-repeat: no-repeat;
+    background-position: -406px -340px;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.modal-content .modal-body .passport-pop-wrapper .change-btn:hover{
+	background-position: -334px -402px;
+}
+.modal-content .modal-body .passport-pop-wrapper .change-btn:after{
+	content: "";
+    position: absolute;
+    top: -2px;
+    right: -117px;
+    width: 119px;
+    height: 36px;
+    background-position: -381px -204px;
+	background-image: url(//www.lgstatic.com/lg-www-fed/common/widgets/passport/static/images/pop-sprite_de4e5ce.png);
+    background-repeat: no-repeat;
+}
+.modal-content .modal-body .passport-pop-wrapper .title{
+	margin-top: 74px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    font-weight: bolder;
+}
+.modal-content .modal-body .passport-pop-wrapper .scan-content{
+	height: 217px;
+	opacity: 1;
+}
+.modal-content .modal-body .passport-pop-wrapper .scan-content .qrCodeCanvas{
+	margin: auto;
+    width: 180px;
+    height: 180px;
+}
+.modal-content .modal-body .passport-pop-wrapper .scan-content .qrCodeCanvas canvas{
+	width: 180px;
+    height: 180px;
+    background: url(../images/25.png);
+}
+.modal-content .modal-body .passport-pop-wrapper .scan-content .tips{
+	text-align: center;
+    margin: 15px 0;
+}
+.modal-content .modal-body .passport-pop-wrapper .register-btn{
+	width: 100%;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 60px;
+}
+.modal-register{
+	z-index: 99;
+	width: 436px;
+	height: 555px;
+	background: white;
+	border-radius: 6px;
+	position: relative;
+	margin:auto;
+	top: 222px;
+	background-clip: padding-box;
+    outline: 0;
+}
+.modal-register .modal-body{
+	width: 406px;
+	height: 525px;
+	position: relative;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.modal-register .modal-body .modal-close_icon{
+	position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    font-style: normal;
+}
+.modal-register .modal-body .account{
+	width: 406px;
+	height: 468px;
+	box-sizing: border-box;
+	padding: 10px;
+	
+}
+.modal-register .modal-body .account .change-btn{
+	display: block;
+	background-image: url(//www.lgstatic.com/lg-www-fed/common/widgets/passport/static/images/popup-sprite_e5ea04f.png);
+    background-repeat: no-repeat;
+    background-position: -440px -268px;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.modal-register .modal-body .account .change-btn:hover{
+	background-position: -334px -330px;
+}
+.modal-register .modal-body .account .change-btn:after{
+	content: "";
+    position: absolute;
+    top: -2px;
+    right: -112px;
+    width: 107px;
+    height: 36px;
+    background-image: url(//www.lgstatic.com/lg-www-fed/common/widgets/passport/static/images/pop-sprite_de4e5ce.png);
+    background-repeat: no-repeat;
+    background-position: -20px -296px;
+}
+.modal-register .modal-body .account .logo{
+	width: 86px;
+    height: 42px;
+    margin: 35px auto 40px;
+    background-image: url(//www.lgstatic.com/lg-www-fed/common/widgets/passport/static/images/popup-sprite_e5ea04f.png);
+    background-repeat: no-repeat;
+    background-position: -334px -268px;
+}
+.modal-register .modal-body .account .forms-area{
+	width: 316px;
+	height: 331px;
+	margin: 0 auto;
+}
+.modal-register .modal-body .account .forms-area  .switch-tab{
+	width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.modal-register .modal-body .account .forms-area  .switch-tab div{
+	position: relative;
+    font-size: 16px;
+    color: #666;
+    margin: 0 35px 15px 5px;
+    float: left;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+.modal-register .modal-body .account .forms-area  .switch-tab .active{
+	color: #333;
+    font-weight: 700;
+}
+.modal-register .modal-body .account .forms-area  .switch-tab .active:after{
+	content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 10%;
+    width: 63%;
+    height: 2px;
+    background: #333;
+    transition: all ease .3s;
+}
+.modal-register .modal-body .account .forms-area .forms-top-wrapper{
+	width: 316px;
+	height: 140px;
+	overflow: hidden;
+}
+.modal-register .modal-body .account .forms-area .forms-top-wrapper .forms-top-password{
+	width: 316px;
+	height: 140px;
+}
+.modal-register .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .active .login_enter_password{
+	box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    padding-left: 18px;
+    background: 0 0;
+    border-radius: 0;
+    font-size: 14px;
+    border: 0;
+    background: #f4f4f4;
+    margin-bottom: 16px;
+    outline: none;
+}
+.modal-register .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .phone-input{
+	position: relative;
+    width: 316px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+}
+.modal-register .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .phone-input .input_border{
+	border: 1px solid #fff;
+}
+.modal-register .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .phone-input .input_border .area_code{
+	position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    line-height: 50px;
+    cursor: default;
+    margin-left: 18px;
+}
+.modal-register .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .phone-input .input_border .area_code:after{
+	position: absolute;
+    right: 0px;
+    top: 24px;
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0;
+    border-color: #9c9c9c transparent transparent;
+}
+.modal-register .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .phone-input .input_border .area_code_list{
+	position: absolute;
+    left: 0;
+    top: 46px;
+    z-index: 99;
+    width: 200px;
+    max-height: 90px;
+    border: 1px solid #eee;
+    overflow-y: scroll;
+    background-color: #fff;
+}
+.modal-register .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .phone-input .input_border .area_code_list .code-list-main{
+	line-height: 36px;
+    cursor: default;
+}
+.modal-register .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .phone-input .input_border .area_code_list .code-list-main dt{
+	padding: 0 12px;
+    color: #999;
+    background-color: #FBFBFB;
+}
+.modal-register .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .phone-input .input_border .area_code_list .code-list-main dd{
+	padding: 0 12px;
+    color: #555;
+}
+.modal-register .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .phone-input .input_border .area_code_list .code-list-main dd span{
+	float: right;
+}
+.modal-register .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .phone-input .input_border .area_code_list .tips{
+	color: #B5B5B5;
+    padding: 40px 12px;
+}
+.modal-register .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .phone-input .input_border .login_enter_code{
+	box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    border-radius: 0;
+    font-size: 14px;
+    border: 0;
+    background: #f4f4f4;
+    padding-left: 100px;
+    outline: none;
+}
+.modal-register .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .input_group{
+	background: #f4f4f4;
+}
+.modal-register .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .input_group .yzm-input{
+	width: 216px;
+    float: left;
+    box-sizing: border-box;
+    height: 50px;
+    padding-left: 18px;
+    border-radius: 0;
+    font-size: 14px;
+    border: 0;
+    background: #f4f4f4;
+    outline: none;
+}
+.modal-register .modal-body .account .forms-area .forms-top-wrapper .forms-top-password .input_group .yzm-btn{
+	width: 95px;
+    float: left;
+    padding: 0;
+    font-size: 14px;
+    color: #00b38a;
+    text-align: center;
+    line-height: 48px;
+    background: #f4f4f4;
+    border: 0;
+}
+.modal-register .modal-body .account .forms-area .forms-bottom{
+	width: 316px;
+	margin: 0 auto;
+}
+.modal-register .modal-body .account .forms-area .forms-bottom .clearfix .change-login-type{
+	width: 150px;
+    float: left;
+    cursor: pointer;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: #00b38a;
+}
+.modal-register .modal-body .account .forms-area .forms-bottom .clearfix a{
+	float: right;
+    font-size: 14px;
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #999;
+}
+.modal-register .modal-body .account .forms-area .forms-bottom .login-btn{
+	width: 316px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background-image: url(//www.lgstatic.com/lg-www-fed/common/widgets/passport/static/images/popup-sprite_e5ea04f.png);
+    background-repeat: no-repeat;
+    background-position: -20px -20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.modal-register .modal-body .account .forms-area .register-btn{
+	width: 100%;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    cursor: pointer;
+}
+.modal-register .modal-body .account .forms-area .third-login{
+	margin-top: 30px;
+    font-size: 14px;
+    color: #999;
+}
+.modal-register .modal-body .account .forms-area .third-login .third-login-btns{
+	display: inline-block;
+    vertical-align: middle;
+}
+.modal-register .modal-body .account .forms-area .third-login .third-login-btns a{
+	cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 13px;
+    background-image: url(//www.lgstatic.com/lg-www-fed/common/widgets/passport/static/images/third-sprite_d07ffce.png);
+    background-repeat: no-repeat;
+}
+.modal-register .modal-body .account .forms-area .third-login .third-login-btns .weibo{
+	width: 27px;
+    height: 27px;
+    background-position: -196px -82px;
+}
+.modal-register .modal-body .account .forms-area .third-login .third-login-btns .wechat{
+	width: 27px;
+    height: 27px;
+    background-position: -102px -206px;
+}
+.modal-register .modal-body .account .forms-area .third-login .third-login-btns .qq{
+	width: 27px;
+    height: 27px;
+    background-position: -196px -123px;
+}
+.modal-register .modal-body .account .forms-area .third-login .third-login-btns .baidu{
+	width: 27px;
+    height: 27px;
+    background-position: -20px -210px;
+}
+.modal-register .modal-body .account .forms-area .agreement{
+	width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+}
+.modal-register .modal-body .account .forms-area .agreement a{
+	color: #00b38a;
+}
+.modal-register .modal-body .passport-pop-wrapper{
+	position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,.95);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.modal-register .modal-body .passport-pop-wrapper .change-btn{
+	display: block;
+	background-image: url(//www.lgstatic.com/lg-www-fed/common/widgets/passport/static/images/popup-sprite_e5ea04f.png);
+    background-repeat: no-repeat;
+    background-position: -406px -340px;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.modal-register .modal-body .passport-pop-wrapper .change-btn:hover{
+	background-position: -334px -402px;
+}
+.modal-register .modal-body .passport-pop-wrapper .change-btn:after{
+	content: "";
+    position: absolute;
+    top: -2px;
+    right: -117px;
+    width: 119px;
+    height: 36px;
+    background-position: -254px -260px;
+	background-image: url(//www.lgstatic.com/lg-www-fed/common/widgets/passport/static/images/pop-sprite_de4e5ce.png);
+    background-repeat: no-repeat;
+}
+.modal-register .modal-body .passport-pop-wrapper .title{
+	margin-top: 74px;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    font-weight: bolder;
+}
+.modal-register .modal-body .passport-pop-wrapper .scan-content{
+	height: 217px;
+	opacity: 1;
+}
+.modal-register .modal-body .passport-pop-wrapper .scan-content .qrCodeCanvas{
+	margin: auto;
+    width: 180px;
+    height: 180px;
+}
+.modal-register .modal-body .passport-pop-wrapper .scan-content .qrCodeCanvas canvas{
+	width: 180px;
+    height: 180px;
+    background: url(../images/25.png);
+}
+.modal-register .modal-body .passport-pop-wrapper .scan-content .tips{
+	text-align: center;
+    margin: 15px 0;
+}
+.modal-register .modal-body .passport-pop-wrapper .register-btn{
+	width: 100%;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 60px;
+}
